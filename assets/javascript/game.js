@@ -103,12 +103,13 @@ var checkIfValid = function (playerInput) {
 // Display word with correctly guessed letters in the correct location 
 // within the selected word
 var getWordToDisplay = function () {
+    //console.log("Word = " + word);
     var result = "";
     for (var i = 0; i < word.length; i++) {
         var currentCharacter = word.charAt(i);
         
         // If current word character is also in the guesses array, display the letter
-        if (guesses.indexOf(currentCharacter) >= 0) {
+        if (guesses.indexOf(currentCharacter) >= 0){
             result = result + currentCharacter;
         }
         // else display a "_" instead of the letter
@@ -117,6 +118,7 @@ var getWordToDisplay = function () {
         }
         result = result + " ";
     }
+    //console.log ("Result" + result);
     
     return result;
 }
@@ -186,7 +188,7 @@ var newGame = function (winner) {
     currentAddon = currentItem.addon;
     }
 
-
+   
 
 // *******************************************
 // Begin the game by getting a new word      *
@@ -194,6 +196,8 @@ var newGame = function (winner) {
 var currentItem = getNextWordArray();
 var word = currentItem.objWord;
 var currentAddon = currentItem.addon;
+
+//document.getElementById("currentDisplay").innerHTML = getWordToDisplay();
 
 // Get player input - when player presses the keyboard
 document.onkeyup = function (event) {
