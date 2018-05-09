@@ -1,0 +1,117 @@
+<!--Main Index page - Assignment 3
+    Javascript Word Guess
+    Rhonda Johnson -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Word Guess</title>
+    <!--<link rel="stylesheet" href="assets/css/reset.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/javascript/game.js"></script>
+
+</head>
+
+<body>
+    <!-- Page heading -->
+    <h1 id="gameBanner">Let's Play Word Guess</h1>
+
+    <div class="container"></div>
+    <div class="row">
+        <div class="col-xs-0 col-sm-0 col-md-2 col-lg-2 col-xl-4">
+            <h3></h3>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-8 col-xl-4">
+            <h3 id="pressStart">Press a letter to Start the Game</h3>
+        </div>
+    </div>
+    </div>
+
+    <!-- main container -->
+    <div id="mainContainer" class- "container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12  col-md-6 col-lg-6 col-xl-6 side" id="leftSection">
+                <div class="row">
+                    <h1 id="leftHeader">Italian Foods</h1>
+                </div>
+                <div class="row" id="imageContainer">
+                    <img id="currentImage" src="assets/images/ItalianPasta.jpg" alt="ItalianFood">
+                </div>
+
+                <section id="userMessageContainer">
+                    <!-- Start with blank messages -->
+                    <div class="row">
+                        <h2 id="userMessage1"></h2>
+                    </div>
+                    <div class="row">
+                        <h2 id="userMessage2"></h2>
+                    </div>
+                    <div class="row">
+                        <h2 id="userMessage3"></h2>
+                    </div>
+                    <div class="row">
+                        <h2 id="userMessage4"></h2>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12  col-md-6 col-lg-6 col-xl-6 side" id="rightSection">
+                <section>
+                    <div class="row">
+                        <!--<h1 id="rightHeader">Right side</h1>-->
+                    </div>
+
+                    <section id="userStats">
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="underline">WINS: </p>
+                                <p id="winCount">0</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="underline">Losses: </p>
+                                <p id="lossCount">0</p>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <!-- Start with empty messages -->
+                        <div class="row">
+                            <p class="underline">Current Word</p>
+                        </div>
+                        <div class="row">
+                            <p id="currentDisplay"></p>
+                        </div>
+                        <hr>
+
+                        <div class="row">
+                            <p class="underline">Guessed Letters</p>
+                        </div>
+                        <div class="row">
+                            <p id="lettersGuessed"></p>
+                        </div>
+
+                        <hr>
+
+                        <div class="row">
+                            <p class="underline">Number of Guesses Remaining</p>
+                            <br>
+                            <p id="guessesRemaining">12</p>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

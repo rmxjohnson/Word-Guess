@@ -1,0 +1,161 @@
+/* Homework Assignment #3 Word Guess Game*/
+/* css */
+/* Rhonda Johnson */
+
+/* * {
+    overflow: auto;
+}*/
+
+html, body { 
+    margin: 0; 
+    padding: 0; 
+    /* some extra background to choose from */
+    /*background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtfJuFzjmHwsYIkQRHPm6vRujvijw-bHlikvHGVke_l-4ljrT-5g");*/
+    /*background-image: url("https://www.google.com/search?q=background+image+italian&tbm=isch&tbo=u&source=univ&sa=X&ved=0ahUKEwj-ptOz1fPaAhWk34MKHaGzAxwQ7AkINA&biw=1920&bih=949#imgrc=gn2sWdip1SQiqM:");*/
+    /*background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu-K1qQEjLbZjtVoTZoDdowiBn-QEXipXEqkx0ntkzykhyZlzZcA");*/
+    /*background-image:url("https://previews.123rf.com/images/foodandmore/foodandmore1202/foodandmore120200166/12301619-closeup-abstract-background-of-coiled-strands-of-spaghetti-pasta.jpg");*/
+    /*background-image:url("https://previews.123rf.com/images/stevanzz/stevanzz1302/stevanzz130200069/18120186-fusilli-italiano-o-en-forma-de-h%C3%A9lice-rotini-pasta-fondo-macarrones-crudos-comida-o-la-textura-de-cerc.jpg");*/
+    
+    /* A bacground of pasta */
+    background-image:url("http://c8.alamy.com/comp/E83GJJ/background-image-of-traditional-italian-uncooked-penne-pasta-E83GJJ.jpg");
+}
+
+h2, 
+p{
+    font-family: 'Georgia',Times,'Times New Roman', Times, serif;
+    font-weight: 900;
+    color: red;
+    width: 100%;
+    text-align: center;
+}
+
+hr{
+    background: red;
+}
+
+.section{
+    padding: 0 0 0 0;
+}
+    
+.underline{
+    text-decoration: underline;    
+}
+
+#headingArea{
+    background-color: #ffffff;
+    border-style: solid;
+    border-bottom-color: #cccccc;
+}
+
+
+#gameBanner{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  /* font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;*/
+  line-height: 90px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background: red;
+  justify-content: center;
+}
+
+#pressStart{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #fff;
+    background-color: red;  
+}
+
+#mainContainer{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#leftSection,
+#rightSection{
+    /*text-align: center;
+    justify-content: center;*/
+    border: 3px solid;
+    border-color: green;
+    background-color: yellow;
+    /*color: purple;*/
+}
+
+#leftSection{
+    border-right: 0px;
+}
+
+#leftHeader,
+#rightHeader{
+    width: 100%;
+    margin-top: 5px;
+    color: green;
+    text-align: center;
+    justify-content: center;
+    border: 5px solid;
+    border-color: green;
+    background-color:#fff;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+#currentImage{
+    width: 250px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#userMessageContainer{
+    margin-top: 20px;
+    /*width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;*/
+}
+
+#userStats{
+    margin-top: 20px;
+}
+
+/* media queries */
+@media screen and (max-width:768px){
+    #currentImage{
+        width: 150px;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #leftSection{
+    /*text-align: center;
+    justify-content: center;*/
+    border-top: 3px green solid; 
+    border-right: 3px green solid;
+    border-bottom: 0px;    
+    }
+
+    #leftHeader{
+        line-height: 50px;
+    }
+
+    h1, h3{
+        /*height:30px;*/
+    }
+
+}
+
+
+@media screen and (max-width:640px){
+
+
+
+
+}
