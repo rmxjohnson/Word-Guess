@@ -186,18 +186,24 @@ var newGame = function (winner) {
     word = currentItem.objWord;
     // get new image
     currentAddon = currentItem.addon;
-    }
+    } // end of newGame
 
    
 
 // *******************************************
 // Begin the game by getting a new word      *
 // *******************************************
+
+// get first word and set the display to _ _ _ _ _
 var currentItem = getNextWordArray();
 var word = currentItem.objWord;
 var currentAddon = currentItem.addon;
 
-//document.getElementById("currentDisplay").innerHTML = getWordToDisplay();
+var firstDisplay = function(){
+    document.getElementById("currentDisplay").innerHTML = getWordToDisplay();
+}
+
+
 
 // Get player input - when player presses the keyboard
 document.onkeyup = function (event) {
@@ -210,7 +216,7 @@ document.onkeyup = function (event) {
     // Change the instruction
     document.getElementById("pressStart").innerHTML = "Press another letter to Continue";
 
-    // Assign playet input as the current letter
+    // Assign player input as the current letter
     var letter = event.key.toUpperCase();
     //var letter = String.fromCharCode(event.keyCode).toUpperCase();
 
