@@ -126,10 +126,12 @@ var getWordToDisplay = function () {
 
 // Display the letters already guessed
 var getGuessesToDisplay = function () {
-    var result = "";
-    for (var i = 0; i < guesses.length; i++) {
-        result += guesses[i] + " ";
-    }
+    //var result = "";
+    // for (var i = 0; i < guesses.length; i++) {
+    //     result += guesses[i] + " ";
+    // }
+
+    var result = guesses.join();
 
     return result;
 }
@@ -207,6 +209,9 @@ var firstDisplay = function(){
 
 // Get player input - when player presses the keyboard
 document.onkeyup = function (event) {
+    //reset the image to a Question Mark
+    var questionMark = '<img id="currentImage" src="assets/images/QuestionMark.jpg" alt="ItalianFood">';
+    document.getElementById("imageContainer").innerHTML = questionMark;
     //clear the user message
     document.getElementById("userMessage1").innerHTML = "";
     document.getElementById("userMessage2").innerHTML = "";

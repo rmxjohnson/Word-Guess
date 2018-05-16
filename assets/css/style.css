@@ -2,7 +2,7 @@
 /* css */
 /* Rhonda Johnson */
 
-/* * {
+ /* * {
     overflow: auto;
 }*/
 
@@ -16,8 +16,17 @@ html, body {
     /*background-image:url("https://previews.123rf.com/images/foodandmore/foodandmore1202/foodandmore120200166/12301619-closeup-abstract-background-of-coiled-strands-of-spaghetti-pasta.jpg");*/
     /*background-image:url("https://previews.123rf.com/images/stevanzz/stevanzz1302/stevanzz130200069/18120186-fusilli-italiano-o-en-forma-de-h%C3%A9lice-rotini-pasta-fondo-macarrones-crudos-comida-o-la-textura-de-cerc.jpg");*/
     
-    /* A bacground of pasta */
+    /* A background of pasta */
     background-image:url("http://c8.alamy.com/comp/E83GJJ/background-image-of-traditional-italian-uncooked-penne-pasta-E83GJJ.jpg");
+}
+
+h1{
+    margin-right: 0;
+}
+
+#instructionRow{
+    margin-right: 0;
+    margin-left: 0;
 }
 
 h2, 
@@ -49,6 +58,7 @@ hr{
 
 
 #gameBanner{
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
