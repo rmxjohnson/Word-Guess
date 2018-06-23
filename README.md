@@ -2,6 +2,9 @@
 Homework #3 Javascript Assignment
 Rhonda Johnson
 
+Link to deployed project
+https://rmxjohnson.github.io/Word-Guess/
+
 The program uses bootstrap along with a custom style.css.
 The program uses javascript to dynamically update the page with current guesses, counts, and images.
 
