@@ -16,5 +16,9 @@ The letters in the guess array are compared to the letters in the current game w
 The game is over when the user runs out of guesses or when all the letters in the game word have been correctly selected by the user.
 When the game is over, the correct word and its corresponding image are displayed on the page.
 
+## Home Page
+
+![home.png](assets/images/home.png)	
+
     
 
